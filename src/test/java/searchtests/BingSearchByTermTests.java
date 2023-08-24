@@ -47,6 +47,7 @@ public class BingSearchByTermTests extends BaseClass {
         WebElement firstResult = driver.findElement(By.xpath(XPATH_FIRST_RESULT_BING));
         String resultText = firstResult.getText();
 
+        //In order to cover the two outputs that may appear both titles are put in the Assertion:
         boolean isCondition1Met = resultText.equals(EXPECTED_CONDITION_ONE);
         boolean isCondition2Met = resultText.equals(EXPECTED_CONDITION_TWO);
         Assertions.assertTrue(isCondition1Met || isCondition2Met, ERROR_MESSAGE);
