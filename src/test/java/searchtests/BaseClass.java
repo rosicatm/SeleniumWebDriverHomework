@@ -37,7 +37,7 @@ public class BaseClass {
         EDGE
     }
 
-    public static WebDriver startBrowser(GoogleSearchByTermTests.BrowserTypes browserType) {
+    public static WebDriver startBrowser(BrowserTypes browserType) {
         WebDriver driver = null;
         // Setup browser
         switch (browserType) {
