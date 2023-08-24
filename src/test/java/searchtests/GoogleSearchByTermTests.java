@@ -18,7 +18,7 @@ public class GoogleSearchByTermTests extends BaseClass {
 
         // Setup browser
         // In order to test it on different browsers, please change the name of the browser to EDGE, FIREFOX or CHROME
-        driver = startBrowser(BrowserTypes.EDGE);
+        driver = startBrowser(BrowserTypes.CHROME);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Navigate to Google.com
